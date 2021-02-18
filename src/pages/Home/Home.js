@@ -1,5 +1,5 @@
 import React from 'react'
-import { Navbar, CreatePost } from '../../containers'
+import { Navbar, CreatePost, Feed } from '../../containers'
 import './styles.css'
 
 const Home = () => {
@@ -7,6 +7,7 @@ const Home = () => {
         <div className="home">
             <Navbar />
             <CreatePost />
+            <Feed />
         </div>
     )
 }

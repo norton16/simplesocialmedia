@@ -48,9 +48,14 @@ const CreatePost = () => {
                         caption: caption,
                         photoUrl: imageUrl,
                         username: user.email.replace("@gmail.com",""),
-                        photoUrl: user.photoURL
+                        profileUrl: user.photoURL
                     })
                 })
+                //Clear post content after post
+                setCaption('');
+                setProgress(0);
+                setImage(null);
+                document.getElementById("image-preview").style.display = "none";
             });
         }
     };
@@ -88,7 +93,7 @@ const CreatePost = () => {
                     <button 
                         className="create-post-btn" 
                         onClick={handlePost} 
-                        style={{color: caption ? "#000" : "lightgrey"}}>
+                        style={{color: caption ? "#000" : "lightgrey", cursor: caption ? "pointer" : ""}}>
                         {`Post ${progress != 0 ? `${progress}%` : ""}`}
                     </button>
                 </div>
