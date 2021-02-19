@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 24px;
+    padding: 24px 0px 0px 0px;
 }
 
 .create-post-logged-in {
@@ -10,10 +10,7 @@
     width: 100%;
     max-width: 600px;
     border-radius: 5px;
-    padding: 12px 16px;
-}
-
-.create-post p {
+    padding: 16px 16px;
 }
 
 .create-post-bottom {
@@ -54,4 +51,17 @@
     height: 80px;
     margin: 12px 0px;
     border-radius: 5px;
+}
+
+.sign-in-landing {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 12px;
+}
+
+.sign-in-landing p {
+    margin: 12px;
+    text-align: center;
 }

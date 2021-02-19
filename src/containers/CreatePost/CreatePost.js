@@ -99,9 +99,9 @@ const CreatePost = () => {
                 </div>
             </div>
             :
-            <div> 
+            <div className="sign-in-landing">
+                <p>Welcome to my Social Media site.<br/>Sign in to post a picture and comment!</p> 
                 <SignInBtn />
-                <p style={{marginLeft: "12px"}}>to post and comment</p>
             </div>
             }
         </div>

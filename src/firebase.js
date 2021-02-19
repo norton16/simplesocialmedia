@@ -15,4 +15,20 @@ const auth = firebase.auth();
 const storage = firebase.storage();
 const provider = new firebase.auth.GoogleAuthProvider();
 
+// auth.setPersistence(firebase.auth.Auth.Persistence.SESSION)
+//     .then(() => {
+//         // Existing and future Auth states are now persisted in the current
+//         // session only. Closing the window would clear any existing state even
+//         // if a user forgets to sign out.
+//         // ...
+//         // New sign-in will be persisted with session persistence.
+//         return auth.signInWithGoogle();
+        
+//     })
+//     .catch((error) => {
+//         // Handle Errors here.
+//         var errorCode = error.code;
+//         var errorMessage = error.message;
+//     });
+
 export {db, auth, storage, provider};
